@@ -1,6 +1,6 @@
 <?php
 
-class Buku {
+class buku {
     public $penulis;
     public $isbn;
     public $judul;
@@ -35,7 +35,7 @@ class Buku {
 }
 
 $buku_saya = new Buku();
-$buku_saya->setPenulis("Didik Setiawan");
+$buku_saya->setPenulis("Nizar Aqsa Saputra");
 $buku_saya->setIsbn(9872317652569);
 $buku_saya->setJudul("Pemrograman Web");
 $pinjam_buku_saya = $buku_saya->pinjam();
