@@ -43,4 +43,4 @@ echo "Judul Buku = ". $buku_saya->getJudul();
 echo "Penulis Buku = ". $buku_saya->getPenulis();
 echo "ISBN = ". $buku_saya->getIsbn();
 echo "Tanggal Peminjaman = ". date('d-m-Y');
-echo "Tanggal Pengembalian = ". $pinjam_buku_saya;
+echo "Tanggal Pengembalian = ". $pinjam_buku_saya; 

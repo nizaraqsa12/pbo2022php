@@ -40,4 +40,4 @@ $Bergabung_anggota_baru = $anggota_baru->Bergabung();
 echo "No. Anggota yang bergabung = ". $anggota_baru->getNo_anggota();
 echo "Nama Lengkap Anggota Baru = ". $anggota_baru->getNama_lengkap();
 echo "No. Hp Anggota Baru = ". $anggota_baru->getNo_hp();
-echo "Tahun Anggota Tersebut bergabung = ". $Bergabung_anggota_baru;
+echo "Tahun Anggota Tersebut bergabung = ". $Bergabung_anggota_baru; 
