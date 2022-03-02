@@ -1,13 +1,17 @@
 <?php
 
 class buku {
-    public $penulis;
-    public $isbn;
-    public $judul;
+    private $penulis;
+    private $isbn;
+    private $judul;
 
+    public function __construct($penulis_baru, $isbn_baru, $judul_baru){
+        $this->penulis = $penulis_baru;
+        $this->isbn = $isbn_baru;
+        $this->judul = $judul_baru;
+    }
 
-
-    public function pinjam() {
+    public function pinjam(){
         $pinjam = date("d-m-Y");
         $tanggal_kembali = mktime(0,0,0,date("n"),date("j")+7,date("Y"));
         $kembali = date("d-m-Y", $tanggal_kembali);
@@ -34,7 +38,7 @@ class buku {
     }
 }
 
-$buku_saya = new Buku();
+$buku_saya = new Buku("Nizar Aqsa Saputra", +62895365210106, "Pemrograman Web");
 $buku_saya->setPenulis("Nizar Aqsa Saputra");
 $buku_saya->setIsbn(9872317652569);
 $buku_saya->setJudul("Pemrograman Web");
@@ -43,4 +47,4 @@ echo "Judul Buku = ". $buku_saya->getJudul();
 echo "Penulis Buku = ". $buku_saya->getPenulis();
 echo "ISBN = ". $buku_saya->getIsbn();
 echo "Tanggal Peminjaman = ". date('d-m-Y');
-echo "Tanggal Pengembalian = ". $pinjam_buku_saya; 
+echo "Tanggal Pengembalian = ". $pinjam_buku_saya;

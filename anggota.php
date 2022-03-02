@@ -1,10 +1,17 @@
 <?php
 
 class anggota{
+    const PRIA = 1;
+    const WANITA = 0;
+
     public $no_anggota;
-    public $nama_lengkap;
+    private $nama_lengkap;
     public $no_hp;
 
+    public function __construct($nama_lengkap_baru, $no_hp_baru){
+        $this->nama_lengkap = $nama_lengkap_baru;
+        $this->no_hp = $no_hp_baru;
+    }
 
 
     public function Bergabung(){
@@ -32,7 +39,7 @@ class anggota{
     }
 }  
 
-$anggota_baru = new Anggota();
+$anggota_baru = new Anggota("Nizar Aqsa Saputra", +62895365210106);
 $anggota_baru->setNo_anggota(1082022);
 $anggota_baru->setNama_lengkap("Nizar Aqsa Saputra");
 $anggota_baru->setNo_hp(+62895365210106);
@@ -40,4 +47,5 @@ $Bergabung_anggota_baru = $anggota_baru->Bergabung();
 echo "No. Anggota yang bergabung = ". $anggota_baru->getNo_anggota();
 echo "Nama Lengkap Anggota Baru = ". $anggota_baru->getNama_lengkap();
 echo "No. Hp Anggota Baru = ". $anggota_baru->getNo_hp();
+echo "Konstanta Anggota = ". $anggota_baru::PRIA."\n";
 echo "Tahun Anggota Tersebut bergabung = ". $Bergabung_anggota_baru; 
