@@ -1,6 +1,6 @@
 <?php
  namespace core;
 
- class Model {
+ class Model { 
      protected $connection; 
  }

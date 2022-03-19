@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models;
 
 require_once 'User.php';
@@ -46,7 +47,7 @@ class Anggota extends User{
         return $this->no_hp;
     }
     public function daftarkan(){
-        echo "Anggota sudah terdaftar";
+        echo "anggota sudah terdaftar";
     }
   
 }

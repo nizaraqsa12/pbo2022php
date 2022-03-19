@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controller;
 
 class PendaftaranController{
@@ -12,6 +13,6 @@ class PendaftaranController{
     }
 
     public function tambahkanAnggota(){
-        echo "Anggota telah ditambahkan";
+        echo "anggota telah ditambahkan";
     }
 }
