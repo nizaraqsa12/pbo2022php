@@ -22,4 +22,3 @@ class Petugas extends User{
         var_dump($this->_array);
     }
 }
-
