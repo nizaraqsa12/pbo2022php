@@ -10,8 +10,8 @@ class Petugas extends User{
 
     public function __construct($userpetugas){
        $this->nip = 232435234324;
-       $this->nama_lengkap = "Muhammad Faqih";
-       $this->alamat = "Jl. H Paris 2";
+       $this->nama_lengkap = "Nizar Aqsa";
+       $this->alamat = "Jl. P. Natakusuma GG.Airlangga No.17 A";
        $this->_array = array('NIP'=>$this->nip, 'Nama Lengkap'=>$this->nama_lengkap, 'Alamat'=>$this->alamat);
     }
 
