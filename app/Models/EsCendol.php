@@ -3,7 +3,7 @@
 namespace App\Models;
 use Core\Minuman;
 use Core\Produk;
-class EsJeruk implements Minuman 
+Class EsCendol implements Minuman 
 {
     private $rasa;
     private $harga;
